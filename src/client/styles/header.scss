@@ -1,0 +1,21 @@
+header {
+
+    display: flex !important;    
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, gray, lightgray  );
+    height: 5em;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 40px !important;
+    box-sizing: border-box;
+   
+  
+  * {
+  height: inherit;
+  &:hover { background-color: white; color:black; text-decoration:underline; cursor:pointer;  }
+
+}
+   
+}
