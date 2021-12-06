@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section class="center">
+<center class="center">
+                <form class="form" method="post" action="/getInfo" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+<table id="data">
+<tbody>
+  <tr>
+    <th> Key </th>
+    <th> Value </th>
+
+  </tr>
+  <tr>
+    <td id="subjectivity">subjectivity</td>
+    <td>N/A</td>
+
+</tr>
+  <tr>
+    <td id="irony">irony</td>
+    <td>N/A</td>
+
+  </tr>
+  <tr>
+    <td id="confidence">confidence</td>
+    <td>N/A</td>
+
+  </tr>
+  <tr>
+    <td id="agreement">agreement</td>
+    <td>N/A</td>
+
+  </tr>
+  <tr>
+    <td id="score_tag"> positivity/negativity </td>
+    <td>N/A</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+</center>            </section>
+
+            <section>
+
+ <div style="text-align:center;"> <center> <p id="error">
+ </p> </center>
+  </div>
+          </section>
+        </main>
+
+        <footer class="form">
+            <p>This is a footer</p>
+        </footer>
+
+<script>
+try {
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('./service-worker.js')
+           .then(function() { console.log("Service Worker Registered"); });
+ }
+} catch (err) {
+/* This means it's probably production mode */
+console.error(err," Banana")
+}
+
+</script>
+    </body>
+</html>
